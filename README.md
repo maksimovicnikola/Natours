@@ -1,1 +1,1 @@
-# Natours test
+# Natours
