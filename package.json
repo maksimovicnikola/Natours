@@ -1,0 +1,25 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Using of new aproach - BEM (Block Element Modifier) methodology",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://maksimovicnikola:mastermind4422@github.com/maksimovicnikola/Natours.git"
+  },
+  "keywords": [
+    "natours"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maksimovicnikola/Natours/issues"
+  },
+  "homepage": "https://github.com/maksimovicnikola/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}

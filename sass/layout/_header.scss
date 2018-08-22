@@ -1,0 +1,40 @@
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------ HEADER SECTION ------------------------------ */
+/* ---------------------------------------------------------------------------- */
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /* .logo-box has absolute position and it is a child of .header, so .header needs to be relative because it is a parent class  */
+  position: relative;
+
+  /* cliping part of image defined by four of (x, y) coordinates */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+    width: auto;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    /* translate(-50%, -50%) will put element on the horizontal and vertical middle */
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
